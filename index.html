@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <header class="header">
+        <span class="stats">
+          <p>My balance</p>
+          <strong>$921.48</strong>
+        </span>
+        <img src="./images/logo.svg" alt="" />
+      </header>
+      <section class="chart-body">
+        <article class="chart-stats">
+          <h1>Spending - Last 7 days</h1>
+          <div class="charts-display">
+            <div class="column-wrapper">
+              <p>mon</p>
+              <div id="monColumn" class="column"></div>
+              <span id="valuesPerDay"></span>
+            </div>
+            <div class="column-wrapper">
+              <p>tue</p>
+              <div id="tueColumn" class="column"></div>
+              <span id="valuesPerDay"></span>
+            </div>
+            <div class="column-wrapper">
+              <p>wed</p>
+              <div id="wedColumn" class="column"></div>
+              <span id="valuesPerDay"></span>
+            </div>
+            <div class="column-wrapper">
+              <p>thu</p>
+              <div id="thuColumn" class="column"></div>
+              <span id="valuesPerDay"></span>
+            </div>
+            <div class="column-wrapper">
+              <p>fri</p>
+              <div id="friColumn" class="column"></div>
+              <span id="valuesPerDay"></span>
+            </div>
+            <div class="column-wrapper">
+              <p>sat</p>
+              <div id="satColumn" class="column"></div>
+              <span id="valuesPerDay"></span>
+            </div>
+            <div class="column-wrapper">
+              <p>sun</p>
+              <div id="sunColumn" class="column"></div>
+              <span id="valuesPerDay"></span>
+            </div>
+          </div>
+        </article>
+        <hr />
+        <article class="chart-resume">
+          <span class="thisMonth">
+            <p>Total this month</p>
+            <strong>$478.33</strong>
+          </span>
+          <span class="lastMonth">
+            <strong>+2.4%</strong>
+            <p>from last month</p>
+          </span>
+        </article>
+      </section>
+    </main>
+
+    <script src="./src/script.js"></script>
+  </body>
+</html>
+
+<!-- My balance $921.48 Spending - Last 7 days mon tue wed thu fri sat sun Total
+  this month $478.33 +2.4% from last month
+
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      >Frontend Mentor</a
+    >. Coded by <a href="#">Your Name Here</a>.
+  </div> -->

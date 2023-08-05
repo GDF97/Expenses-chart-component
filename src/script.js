@@ -13,11 +13,11 @@ const dataValues = [
   },
   {
     day: "thu",
-    amount: 41.07,
+    amount: 31.07,
   },
   {
     day: "fri",
-    amount: 43.39,
+    amount: 23.39,
   },
   {
     day: "sat",
@@ -41,17 +41,15 @@ values.forEach((val) => {
 });
 
 let testeNumber;
-for (let i = 0; i < amountValues.length; i++) {
+for (let i = 0; i < dataValues.length; i++) {
   columns[i].style.backgroundColor = "#ec775f";
-
   columns[i].style.height = `${Math.round(amountValues[i])}%`;
   columns[i].value = Math.round(amountValues[i]);
 
   if (testeNumber == null) {
     testeNumber = columns[i];
-    continue;
   } else {
-    if (testeNumber.value > columns[i].value) {
+    if (testeNumber.value > amountValues[i]) {
       columns[i].style.backgroundColor = "#ec775f";
       testeNumber.style.backgroundColor = "#76b5bc";
     } else {

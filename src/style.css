@@ -152,12 +152,24 @@ body {
     width: 340px;
   }
 
+  .chart-body {
+    min-height: fit-content;
+  }
+
+  .charts-display {
+    height: 180px;
+  }
+
   .charts-display .column-wrapper {
     width: 30px;
   }
 
+  .column-wrapper div {
+    border-radius: 5px;
+  }
+
   .chart-stats h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .thisMonth strong {
